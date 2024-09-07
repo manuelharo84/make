@@ -21,7 +21,7 @@ public class CheckApplication {
 		SpringApplication.run(CheckApplication.class, args);
 
 		ConnectionFactory factory = new ConnectionFactory();
-		factory.setHost("192.168.1.60");
+		factory.setHost("rabbitmq");
 		factory.setPort(5672);
 		Connection connection = factory.newConnection();
 		Channel channel = connection.createChannel();
